@@ -1,0 +1,17 @@
+
+<nav>
+  <a routerLink="/" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" >Counter</a>
+  <a [routerLink] = "['/car']" [routerLinkActive]="'active'">Car</a>
+  <a [routerLink] = "['/dragonball']" [routerLinkActive]="'active'">Dragonball</a>
+  <a [routerLink] = "['/dragonball-super']" [routerLinkActive]="'active'">Dragonball - super</a>
+  
+</nav>
+
+
+<!--
+Dentro de pages crear un componente dragonball
+*.ts
+*.html -> titulo -> Page Dragonball
+-crear la ruta correspondiente '/dragonball'
+-agregarlo al bnavbar, que aparezca al final y tenga el mismo comportamiento de los demas
+-->

@@ -1,0 +1,17 @@
+nav{
+    background-color: #333; 
+    padding: 10px;
+    color: white; 
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+} 
+
+nav a{
+    color: white; 
+    text-decoration: none;
+}
+
+nav a.active{
+    color: orange;
+}

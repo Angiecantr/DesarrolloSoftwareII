@@ -1,0 +1,18 @@
+
+  <h1>Signals en Angular</h1>
+  <td>Brand:</td>
+  <dd>{{ brand()}}</dd>
+  <td>Year: </td>
+  <dd>{{ year() }}</dd>
+  <td>Student: </td>
+  <dd>{{ student() }}</dd>
+  <td>Descripción:  </td>
+  <dd>{{ getCarDescription() }}</dd>
+  <td>Nombre en mayúscula</td>
+  <dd>{{student().toUpperCase()}}</dd>
+  <td>Nombre en mayúscula F2</td>
+  <dd>{{capitalizedStudent()}}</dd>
+
+  <button (click)="changeCar()"> Cambiar carro</button>
+  <button (click)="resetForm()"> Restablecer valores</button>
+  <button (click)="changeYear()"> Cambiar año</button>
