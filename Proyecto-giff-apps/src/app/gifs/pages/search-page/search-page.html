@@ -1,1 +1,16 @@
-<div> Search-page</div>
+<form 
+  (ngSubmit)="searchGifs()" 
+  class="flex items-center gap-2 bg-gray-100 p-3 rounded-full shadow-sm w-full max-w-lg mx-auto"
+>
+  <input type="text" 
+    [(ngModel)]="query" 
+    name="query" 
+    placeholder="Buscar gifs..." 
+    class="flex-1 bg-transparent outline-none px-3 text-gray-700"
+  />
+  <button 
+    type="submit"
+    class="bg-pink-500 hover:bg-pink-600 text-white px-5 py-2 rounded-full transition"
+  >Buscar</button>
+</form>
+<gif-list [gifs]="gifs()"></gif-list>
