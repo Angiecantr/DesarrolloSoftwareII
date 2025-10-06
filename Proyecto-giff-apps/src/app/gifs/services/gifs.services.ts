@@ -38,7 +38,7 @@ export class GifsService {
       params: {
         api_key: environment.apiKey,
         q: query,
-        limit: '20',
+        limit: '18',
       },
     }).pipe(
       map((response) => GifMapper.mapGiphyItemsToGifArray(response.data)),
