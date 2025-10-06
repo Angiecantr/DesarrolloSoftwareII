@@ -15,7 +15,7 @@ export class CounterPageComponent{
     constructor(){
         setInterval(()=>{
             this.counter += 1;
-            //this.counterSignal.update((currentValue: number) => currentValue+1);
+            this.counterSignal.update((currentValue: number) => currentValue+1);
             console.log("Se actualizo");
         },(1000));
     }
