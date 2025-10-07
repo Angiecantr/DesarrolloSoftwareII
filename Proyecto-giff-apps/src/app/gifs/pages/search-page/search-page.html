@@ -1,6 +1,6 @@
 <form 
   (ngSubmit)="searchGifs()" 
-  class="flex items-center gap-2 bg-gray-100 p-3 rounded-full shadow-sm w-full max-w-lg mx-auto"
+  class="flex items-center gap-2 bg-gray-100 p-3 rounded-full shadow-sm max-w-lg mx-auto"
 >
   <input 
     type="text" 
@@ -15,6 +15,6 @@
   >Buscar</button>
 </form>
 
-<div class="mt-4 overflow-x-auto overflow-y-auto max-h-[calc(100vh-120px)] px-2">
+<div class="mt-4 overflow-x-auto overflow-y-auto px-2">
   <gif-list [gifs]="gifs()"></gif-list>
 </div>
