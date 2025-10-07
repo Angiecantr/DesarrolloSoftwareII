@@ -22,7 +22,7 @@ export class GifsService {
     this.http.get<GiphyResponse>(`${environment.urlBase}/gifs/trending`, {
       params:{
         api_key: environment.apiKey,
-        limit: 40
+        limit: 50
       }
     }).subscribe((response)=>{
          console.log(response.data[0].images.original.url);
@@ -38,7 +38,7 @@ export class GifsService {
       params: {
         api_key: environment.apiKey,
         q: query,
-        limit: '18',
+        limit: '10',
       },
     }).pipe(
       map((response) => GifMapper.mapGiphyItemsToGifArray(response.data)),

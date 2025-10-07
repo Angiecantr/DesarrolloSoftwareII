@@ -1,0 +1,35 @@
+<div class="min-h-screen bg-gray-900 text-white flex flex-col items-center py-10">
+  <h2 class="text-3xl font-bold mb-6">🌌 Lista de Personajes de Star Wars</h2>
+
+  <div class="flex gap-4 mb-6">
+    <button (click)="listarPersonajes()"
+      class="px-5 py-2 bg-blue-600 hover:bg-blue-700 rounded-xl shadow-lg transition-all">
+      Listar todos
+    </button>
+
+    <button (click)="listarPersonajesMasculinos()"
+      class="px-5 py-2 bg-green-600 hover:bg-green-700 rounded-xl shadow-lg transition-all">
+      Masculinos
+    </button>
+
+    <button (click)="listarPersonajesFemeninos()"
+      class="px-5 py-2 bg-pink-600 hover:bg-pink-700 rounded-xl shadow-lg transition-all">
+      Femeninos
+    </button>
+
+    <button (click)="reset()"
+      class="px-5 py-2 bg-gray-600 hover:bg-gray-700 rounded-xl shadow-lg transition-all">
+      Limpiar
+    </button>
+  </div>
+
+
+  <ul class="w-1/2 bg-gray-800 rounded-xl p-6 shadow-lg divide-y divide-gray-700">
+    <li *ngFor="let p of personajes()" class="py-3 flex justify-between">
+      <span>{{ p.name }}</span>
+      <span class="text-sm text-gray-400">{{ p.gender }}</span>
+    </li>
+  </ul>
+</div>
+
+
